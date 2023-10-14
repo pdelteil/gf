@@ -2,6 +2,35 @@
 
 A wrapper around grep to avoid typing common patterns.
 
+## What the fork? 
+
+This repo was abandoned by the great [tomnomnom](https://github.com/tomnomnom). I will try to add some rules and keep it updated (at least the installation instructions) 
+
+
+## Install
+
+If you've got Go installed and configured you can install `gf` with:
+
+```
+▶ go install github.com/pdelteil/gf@latest
+```
+### Config
+
+If you've installed using `go install`, you can enable auto-completion to your `.bashrc` like this:
+
+```
+module_path=$(go list -m -f '{{.Dir}}' github.com/pdelteil/gf@latest)
+
+echo 'source $module_path/gf-completion.bash' >> ~/.bashrc
+
+#run `source ~/.bashrc` for the changes to take effect.
+
+#To get started quickly, you can copy the example pattern files to `~/.gf` like this:
+
+cp -r $module_path/examples ~/.gf
+
+```
+
 ## What? Why?
 
 I use grep a *lot*. When auditing code bases, looking at the output of [meg](https://github.com/tomnomnom/meg),
@@ -102,29 +131,6 @@ In order to utilize a different engine, add `engine: <other tool>` to the releva
 ```
 * Note: Different engines use different flags, so in the example above, the flag `E` has to be removed from the `aws-keys.json` file in order for ag to successfully run.
 
-
-## Install
-
-If you've got Go installed and configured you can install `gf` with:
-
-```
-▶ go get -u github.com/tomnomnom/gf
-```
-
-If you've installed using `go get`, you can enable auto-completion to your `.bashrc` like this:
-
-```
-▶ echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
-```
-
-Note that you'll have to restart your terminal, or run `source ~/.bashrc` for the changes to
-take effect.
-
-To get started quickly, you can copy the example pattern files to `~/.gf` like this:
-
-```
-▶ cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
-```
 
 My personal patterns that I've included as examples might not be very useful to you, but hopefully
 they're still a reasonable point of reference.
