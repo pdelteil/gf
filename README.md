@@ -19,9 +19,10 @@ If you've got Go installed and configured you can install `gf` with:
 If you've installed using `go install`, you can enable auto-completion to your `.bashrc` like this:
 
 ```
+# installation path of moduel
 module_path=$(go list -m -f '{{.Dir}}' github.com/pdelteil/gf@latest)
 
-echo 'source $module_path/gf-completion.bash' >> ~/.bashrc
+echo "source $module_path/gf-completion.bash" >> ~/.bashrc
 
 #run `source ~/.bashrc` for the changes to take effect.
 
