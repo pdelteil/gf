@@ -12,7 +12,7 @@ This repo was abandoned by the great [tomnomnom](https://github.com/tomnomnom). 
 If you've got Go installed and configured you can install `gf` with:
 
 ```
-▶ go install github.com/pdelteil/gf@latest
+go install github.com/pdelteil/gf@latest
 ```
 ### Config
 
