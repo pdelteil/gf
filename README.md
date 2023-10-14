@@ -16,38 +16,35 @@ If you've got Go installed and configured you can install `gf` with:
 ```
 ### Config
 
-If you've installed using `go install`, you can enable auto-completion to your `.bashrc` like this:
-
 ```
-# installation path of moduel
+# installation path of module
 module_path=$(go list -m -f '{{.Dir}}' github.com/pdelteil/gf@latest)
 
 echo "source $module_path/gf-completion.bash" >> ~/.bashrc
 
-#run `source ~/.bashrc` for the changes to take effect.
+source ~/.bashrc
 
-#To get started quickly, you can copy the example pattern files to `~/.gf` like this:
+#copy example pattern files to `~/.gf`
 
 cp -r $module_path/examples ~/.gf
 
 ```
-### First try
+### First run
 
+```
+gf php-errors file
 
-## What? Why?
+```
 
-I use grep a *lot*. When auditing code bases, looking at the output of [meg](https://github.com/tomnomnom/meg),
-or just generally dealing with large amounts of data. I often end up using fairly complex patterns like this one:
+## Why?
+
+When auditing code bases, looking at the output of [meg](https://github.com/tomnomnom/meg), or just generally dealing with large amounts of data. I often end up using fairly complex patterns like this one:
 
 ```
 ▶ grep -HnrE '(\$_(POST|GET|COOKIE|REQUEST|SERVER|FILES)|php://(input|stdin))' *
 ```
 
-It's really easy to mess up when typing all of that, and it can be hard to know if you haven't got any
-results because there are non to find, or because you screwed up writing the pattern or chose the wrong flags.
-
-I wrote `gf` to give names to the pattern and flag combinations I use all the time. So the above command
-becomes simply:
+So the above command becomes simply:
 
 ```
 ▶ gf php-sources
@@ -55,7 +52,7 @@ becomes simply:
 
 ### Pattern Files
 
-The pattern definitions are stored in `~/.gf` as little JSON files that can be kept under version control:
+The pattern definitions are stored in `~/.gf` as little JSON files:
 
 ```
 ▶ cat ~/.gf/php-sources.json
@@ -65,7 +62,7 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 }
 ```
 
-To help reduce pattern length and complexity a little, you can specify a list of multiple patterns too:
+To help reduce pattern length and complexity, you can specify a list of multiple patterns:
 
 ```
 ▶ cat ~/.gf/php-sources-multiple.json
@@ -95,19 +92,12 @@ There's an auto-complete script included, so you can hit 'tab' to show you what 
 base64       debug-pages  fw           php-curl     php-errors   php-sinks    php-sources  sec          takeovers    urls
 ```
 
-#### Bash
-
-To get auto-complete working you need to `source` the `gf-completion.bash` file in your `.bashrc` or similar:
-
-```
-source ~/path/to/gf-completion.bash
-```
 
 ### Using custom engines
 
 There are some amazing code searching engines out there that can be a better replacement for grep.
 A good example is [the silver searcher](https://github.com/ggreer/the_silver_searcher).
-It's faster (like **way faster**) and presents the results in a more visually digestible manner.
+It's faster and presents the results in a more visually digestible manner.
 In order to utilize a different engine, add `engine: <other tool>` to the relevant pattern file:
 ```bash
 # Using the silver searcher instead of grep for the aws-keys pattern:
@@ -121,9 +111,6 @@ In order to utilize a different engine, add `engine: <other tool>` to the releva
 ```
 * Note: Different engines use different flags, so in the example above, the flag `E` has to be removed from the `aws-keys.json` file in order for ag to successfully run.
 
-
-My personal patterns that I've included as examples might not be very useful to you, but hopefully
-they're still a reasonable point of reference.
 
 ## Contributing
 
