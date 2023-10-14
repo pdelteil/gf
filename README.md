@@ -28,7 +28,7 @@ source ~/.bashrc
 
 #copy example pattern files to `~/.gf`
 
-cp -r $module_path/examples ~/.gf
+cp -r $module_path/examples/* ~/.gf
 
 ```
 
