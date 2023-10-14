@@ -16,7 +16,7 @@ go install github.com/pdelteil/gf@latest
 ```
 ### Config
 
-Tested with `go version go1.21.3 linux/amd64`. If you have an older version try updating using [this](https://github.com/udhos/update-golang)
+Tested with go version `go1.21.3`. If you have an older version try updating using [this](https://github.com/udhos/update-golang).
 ```
 # installation path of module 
 export GO111MODULE=on
