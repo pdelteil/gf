@@ -38,6 +38,21 @@ cp -r $module_path/examples/* ~/.gf
 gf php-errors file
 
 ```
+### Flags
+
+```
+gf -list
+gf -dump pattern
+gf -save pattern-name flags 'search-pattern'
+
+```
+
+With the flag **dump** you can check the resulting command created by a pattern:
+
+```
+gf -dump xss
+grep -iE "(q=|s=|search=|lang=|keyword=|query=|page=|keywords=|year=|view=|email=|type=|name=|p=|callback=|jsonp=|api_key=|api=|password=|email=|emailto=|token=|username=|csrf_token=|unsubscribe_token=|id=|item=|page_id=|month=|immagine=|list_type=|url=|terms=|categoryid=|key=|l=|begindate=|enddate=)" .
+```
 
 ## Why?
 
