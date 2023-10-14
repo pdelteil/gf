@@ -112,12 +112,8 @@ In order to utilize a different engine, add `engine: <other tool>` to the releva
   "pattern": "([^A-Z0-9]|^)(AKIA|A3T|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{12,}"
 }
 ```
-* Note: Different engines use different flags, so in the example above, the flag `E` has to be removed from the `aws-keys.json` file in order for ag to successfully run.
-
+* Note: Different engines use different flags, so in the example above, the flag `E` has to be removed from the `aws-keys.json` file in order for ag to run.
 
 ## Contributing
-
-I'd actually be most interested in new pattern files! If you've got something you regularly grep for
-then feel free to issue a PR to add new pattern files to the examples directory.
-
+Interested in new pattern files! 
 Bug fixes are also welcome as always :)
