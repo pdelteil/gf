@@ -104,9 +104,12 @@ func main() {
 		}
 
 		if stdinIsPipe() {
-			cmd = exec.Command(operator, pat.Flags, pat.Pattern)
+            cmdArgs := append(strings.Fields(pat.Flags), pat.Pattern)
+			cmd = exec.Command(operator, cmdArgs...)
+
 		} else {
-			cmd = exec.Command(operator, pat.Flags, pat.Pattern, files)
+            cmdArgs := append(strings.Fields(pat.Flags), pat.Pattern, files)
+			cmd = exec.Command(operator, cmdArgs...)
 		}
 		cmd.Stdin = os.Stdin
 		cmd.Stdout = os.Stdout

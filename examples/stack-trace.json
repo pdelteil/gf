@@ -1,0 +1,5 @@
+{
+    "flags": "-niEHB1 -A10",
+    "pattern": "(stack trace)"
+    
+}
