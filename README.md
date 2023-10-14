@@ -16,8 +16,10 @@ go install github.com/pdelteil/gf@latest
 ```
 ### Config
 
+Tested with `go version go1.21.3 linux/amd64`. If you have an older version try updating using [this](https://github.com/udhos/update-golang)
 ```
-# installation path of module
+# installation path of module 
+export GO111MODULE=on
 module_path=$(go list -m -f '{{.Dir}}' github.com/pdelteil/gf@latest)
 
 echo "source $module_path/gf-completion.bash" >> ~/.bashrc
@@ -29,6 +31,7 @@ source ~/.bashrc
 cp -r $module_path/examples ~/.gf
 
 ```
+
 ### First run
 
 ```
