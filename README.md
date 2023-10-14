@@ -31,6 +31,8 @@ echo "source $module_path/gf-completion.bash" >> ~/.bashrc
 cp -r $module_path/examples ~/.gf
 
 ```
+### First try
+
 
 ## What? Why?
 
@@ -100,19 +102,6 @@ To get auto-complete working you need to `source` the `gf-completion.bash` file 
 ```
 source ~/path/to/gf-completion.bash
 ```
-
-#### Zsh
-
-To get auto-complete working you need to enable autocomplete (not needed if you have oh-my-zsh) using `autoload -U compaudit && compinit` or by putting it into `.zshrc`
-
-Then `source` the `gf-completion.zsh` file in your `.zshrc` or similar:
-
-```
-source ~/path/to/gf-completion.zsh
-```
-
-Note: if you're using oh-my-zsh or similar you may find that `gf` is an alias for `git fetch`. You can either
-alias the gf binary to something else, or `unalias gf` to remove the `git fetch` alias.
 
 ### Using custom engines
 
