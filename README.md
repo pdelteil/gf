@@ -28,7 +28,7 @@ source ~/.bashrc
 
 #copy example pattern files to `~/.gf`
 
-cp -r $module_path/examples/* ~/.gf
+cp -r $module_path/patterns/* ~/.gf
 
 ```
 
@@ -93,7 +93,7 @@ To help reduce pattern length and complexity, you can specify a list of multiple
 }
 ```
 
-There are some more example pattern files in the `examples` directory.
+There are some more example pattern files in the `pattern` directory.
 
 You can use the `-save` flag to create pattern files from the command line:
 
