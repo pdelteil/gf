@@ -1,4 +1,0 @@
-{
-    "flags": "-HnrE",
-    "pattern": "CURLOPT_(HTTPHEADER|HEADER|COOKIE|RANGE|REFERER|USERAGENT|PROXYHEADER)"
-}
