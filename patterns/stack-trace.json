@@ -1,4 +1,5 @@
 {
+    "description": "For logs containing stack trace, the rule will show one line before and 10 lines after ",
     "flags": "-niEHB1 -A10",
     "pattern": "stack trace"
 }
