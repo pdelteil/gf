@@ -1,5 +1,5 @@
 {
-    "description": "Searches for the case-insensitive occurrence of "Access-Control-Allow" in files within the current directory and its subdirectories, displaying matching lines with line numbers and file names.",
+    "description": "Searches for the case-insensitive occurrence of 'Access-Control-Allow' in files within the current directory and its subdirectories, displaying matching lines with line numbers and file names.",
     "flags": "-HnriE",
     "patterns": [
         "Access-Control-Allow"
