@@ -1,0 +1,24 @@
+{
+    "description": "Finds lines containing different protocol calls",
+	"flags": "-oriahE",
+	"patterns": [
+            "ftp:",
+            "smtp:",
+            "telnet:",
+            "ssh:",
+            "sftp:",
+            "imap:",
+            "pop3:",
+            "dns:",
+            "dhcp:",
+            "ldap:",
+            "smb:",
+            "nfs:",
+            "rdp:",
+            "vnc:",
+            "irc:",
+            "xmpp:",
+            "snmp:",
+            "ntp:"
+        ]
+}
