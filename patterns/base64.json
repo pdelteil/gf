@@ -1,5 +1,5 @@
 {
-    "description": "Add description",
+    "description": "Find base64-encoded strings that may represent sensitive data in files within the current directory and its subdirectories, showing file name and line number. ",
     "flags": "-HnroE",
     "pattern": "([^A-Za-z0-9+/]|^)(eyJ|YTo|Tzo|PD[89]|aHR0cHM6L|aHR0cDo|rO0)[%a-zA-Z0-9+/]+={0,2}"
 }
