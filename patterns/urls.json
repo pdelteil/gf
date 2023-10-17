@@ -1,5 +1,5 @@
 {
     "description": "Add description",
 	"flags": "-oriahE",
-	"pattern": "https?://[^\"\\'> ]+"
+	"pattern": "(https:|http:)"
 }
