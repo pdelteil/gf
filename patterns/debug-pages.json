@@ -1,5 +1,5 @@
 {
-    "description": "Add description",
+    "description": "Searches for specific patterns within files and directories, including various error messages, in a case-insensitive and recursive manner, printing matching lines with file names and line numbers.",
     "flags": "-HnraiE",
     "pattern": "(Application-Trace|Routing Error|DEBUG\"? ?[=:] ?True|Caused by:|stack trace:|Microsoft .NET Framework|Traceback|[0-9]:in `|#!/us|WebApplicationException|java\\.lang\\.|phpinfo|swaggerUi|on line [0-9]|SQLSTATE)"
     
