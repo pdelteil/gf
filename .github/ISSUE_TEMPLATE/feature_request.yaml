@@ -1,7 +1,6 @@
 name: New feature
-description: Add a new subdomain takeover case
+description: Add a new feature
 title: "[ Feature ]  "
-labels: ["takeover"]
 projects: ["can-i-take-over-this-subdomain"]
 assignees:
   - pdelteil
@@ -10,14 +9,6 @@ body:
     attributes:
       value: |
         Thanks for taking the time!
-  - type: input
-    id: servicename
-    attributes:
-      label: Service name
-      description: What's the name of the vulnerable service?
-      placeholder: ex. Github
-    validations:
-      required: true
   - type: dropdown
     id: type
     attributes:
@@ -38,10 +29,6 @@ body:
       placeholder: Site not found or NXDomain error      
     validations:
       required: true
-  - type: input
-    id: nuclei
-    attributes:
-      label: Nuclei template?
       description: If there is already a nuclei template to detect this takeover, add the URL
       placeholder: https://github.com/projectdiscovery/nuclei-templates/blob/main/http/takeovers/bitbucket-takeover.yaml
     validations:
