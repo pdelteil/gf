@@ -1,5 +1,7 @@
 {
-    "description": "Add description",
+    "description": ["Searches recursively for files within a directory structure and finds occurrences",
+                   "of a specific pattern matching AWS access keys, displaying the file name, line number,"
+                   "and matching line."]
     "flags": "-HanrE",
     "pattern": "([^A-Z0-9]|^)(AKIA|A3T|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{12,}"
 }
