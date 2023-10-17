@@ -1,5 +1,5 @@
 {
-    "description": "Add description",
+    "description": "Finds lines containing https: and http:",
 	"flags": "-oriahE",
 	"pattern": "(https:|http:)"
 }
