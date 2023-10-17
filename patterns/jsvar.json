@@ -1,0 +1,5 @@
+{
+    "description": "Add description",
+"flags": "-HanroE",
+  "pattern": "var [a-z0-9_]+\\=."
+}
