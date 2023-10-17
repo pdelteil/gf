@@ -1,7 +1,6 @@
 name: New feature
 description: Add a new feature
 title: "[ Feature ]  "
-projects: ["can-i-take-over-this-subdomain"]
 assignees:
   - pdelteil
 body:
@@ -22,15 +21,10 @@ body:
     validations:
       required: true
   - type: textarea
-    id: fingerprint
+    id: description
     attributes:
-      label: Fingerprint
-      description: Paste here the fingerprint used to identify this takeover
-      placeholder: Site not found or NXDomain error      
+      label: Description of new  feature
+      placeholder: Description of new  feature     
     validations:
       required: true
-      description: If there is already a nuclei template to detect this takeover, add the URL
-      placeholder: https://github.com/projectdiscovery/nuclei-templates/blob/main/http/takeovers/bitbucket-takeover.yaml
-    validations:
-      required: false  
 
