@@ -1,6 +1,6 @@
 
 {
-    "description": "Add description",
+    "description": "Find URL parameters to inject payloads ",
 "flags": "-iE",
 "patterns": [
 
