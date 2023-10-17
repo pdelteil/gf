@@ -1,5 +1,5 @@
 {
-    "description": "Add description",
+    "description": "Looks for file extensions",
     "flags": "-iE",
      "patterns": [
 
